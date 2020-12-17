@@ -16,6 +16,7 @@ public class Sorts{
         data[i+1] = data[i];
         data[i] = a;
         x++;
+        
       }
     }
     return x;
@@ -31,6 +32,6 @@ public class Sorts{
 
       }
     }
-    
+
   }
 }

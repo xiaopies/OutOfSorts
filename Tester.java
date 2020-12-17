@@ -11,17 +11,17 @@ public class Tester{
     int[] f = {9, 10000, 42, 4};
 
     OutSorts.main(a);
-    System.out.println(Arrays.toString(a));
+
     OutSorts.main(b);
-    System.out.println(Arrays.toString(b));
+
     OutSorts.main(c);
-    System.out.println(Arrays.toString(c));
+
     OutSorts.main(d);
-    System.out.println(Arrays.toString(d));
+
     OutSorts.main(e);
-    System.out.println(Arrays.toString(e));
+
     OutSorts.main(f);
-    System.out.println(Arrays.toString(f));
+    
   }
 
 }

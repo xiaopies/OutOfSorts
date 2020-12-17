@@ -16,7 +16,6 @@ public class Sorts{
         data[i+1] = data[i];
         data[i] = a;
         x++;
-        
       }
     }
     return x;
@@ -29,9 +28,14 @@ public class Sorts{
       }
       else{
         miniSort(data);
-
       }
     }
+    public static void selectionSort(int[] data){
 
+    }
+    public static void insertionSort(int[] data){
+      
+    }
   }
+
 }

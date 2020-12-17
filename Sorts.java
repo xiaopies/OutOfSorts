@@ -1,9 +1,12 @@
 import java.util.Random;
+import java.io.*;
+import java.util.*;
 public class Sorts{
   /**Bubble sort of an int array.
   *Upon completion, the elements of the array will be in increasing order.
   *@param data  the elements to be sorted.
   */
+
   public static int miniSort(int[] data){
     int x = 0;
     for ( int i = 0; i < data.length-1; i++){
@@ -14,7 +17,6 @@ public class Sorts{
         data[i] = a;
         x++;
       }
-      System.out.println(data);
     }
     return x;
   }
@@ -26,7 +28,9 @@ public class Sorts{
       }
       else{
         miniSort(data);
+
       }
     }
+    
   }
 }

@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import Random;
 public class Driver{
   public static void main(String[]args){
     if(args.length < 2){
@@ -14,23 +13,49 @@ public class Driver{
 
       //overhead: 1 random array generation.
       if(args.length < 3 || args[2].equals("random")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+        for (int i =0; i<randData.length; i++){
+          randData[i] = (int)(Math.random() *10);
+        }
+	      System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("equal")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+
+          int x = (int)(Math.random()*10);
+          for (int i =0; i<randData.length; i++){
+            randData[i] = x;
+          }
+  	      System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("sorted")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+
+          for (int i =0; i<randData.length; i++){
+            randData[i] = (int)(Math.random() *10);
+          }
+          Arrays.sort(randData);
+  	      System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("reversed")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+        for (int i =0; i<randData.length; i++){
+          randData[i] = (int)(Math.random() *10);
+        }
+        Arrays.sort(randData);
+        int hi[] = new int[randData.length];
+        for (int i = 0; i<hi.length; i++){
+          hi[i] = randData[randData.length-i-1];
+        }
+        randData = hi;
+        System.out.println(Arrays.toString(randData));
       }
 
       if(args[1].equals("bubble")){
         Sorts.bubbleSort(randData);
+        System.out.println(Arrays.toString(randData));
       }
       else if(args[1].equals("selection")){
         Sorts.selectionSort(randData);
+        System.out.println(Arrays.toString(randData));
       }
       else if(args[1].equals("insertion")){
         Sorts.insertionSort(randData);
+        System.out.println(Arrays.toString(randData));
+
       }
 
       //TEST MODE! This lets you see if your algorithm fails

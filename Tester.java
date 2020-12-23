@@ -24,15 +24,15 @@ public class Tester{
     //
     // OutSorts.main(c);
     //
-    // OutSorts.insertionSort(d);
+    OutSorts.insertionSort(d);
     //
     // OutSorts.main(e);
     //
     // OutSorts.insertionSort(f);
 
-    OutSorts.selectionSort(g);
+    // OutSorts.selectionSort(g);
     System.out.println("after");
-    System.out.println(Arrays.toString(g));
+    System.out.println(Arrays.toString(d));
 
 
 

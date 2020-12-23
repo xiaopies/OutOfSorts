@@ -30,12 +30,43 @@ public class Sorts{
         miniSort(data);
       }
     }
-    public static void selectionSort(int[] data){
-
-    }
-    public static void insertionSort(int[] data){
-      
-    }
   }
+  public static void selectionSort(int[] data){
 
+      for (int i = 0; i<data.length; i++){
+        int check = -1;
+        int a = data[i];
+        int place = 0;
+        int small = data[i];
+        for (int j=i; j<data.length; j++){
+          if (j !=0 && data[j]<data[j-1]){
+            check ++;
+          }
+          if (data[j]<small){
+            small = data[j];
+            place =j;
+          }
+        }
+        if (check == -1){
+          break;
+        }
+        if (place != 0){
+          data[place] = a;
+          data[i] = small;
+        }
+        System.out.println(Arrays.toString(data));
+      }
+    }
+    // public static void insertionSort(int[] data){
+    //   for (int i = 0; i<data.length; i++){
+    //     if (miniSort(data) == 0){
+    //       break;
+    //     }
+    //     else{
+    //       miniSort(data);
+    //     }
+    //   }
+    // }
+
+//time java Driver 2000 bubble
 }

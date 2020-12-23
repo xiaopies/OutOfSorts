@@ -16,21 +16,21 @@ public class Driver{
         for (int i =0; i<randData.length; i++){
           randData[i] = (int)(Math.random() *10);
         }
-	      System.out.println(Arrays.toString(randData));
+
       }else if(args[2].equals("equal")){
 
           int x = (int)(Math.random()*10);
           for (int i =0; i<randData.length; i++){
             randData[i] = x;
           }
-  	      System.out.println(Arrays.toString(randData));
+
       }else if(args[2].equals("sorted")){
 
           for (int i =0; i<randData.length; i++){
             randData[i] = (int)(Math.random() *10);
           }
           Arrays.sort(randData);
-  	      System.out.println(Arrays.toString(randData));
+
       }else if(args[2].equals("reversed")){
         for (int i =0; i<randData.length; i++){
           randData[i] = (int)(Math.random() *10);
@@ -41,20 +41,20 @@ public class Driver{
           hi[i] = randData[randData.length-i-1];
         }
         randData = hi;
-        System.out.println(Arrays.toString(randData));
+
       }
 
       if(args[1].equals("bubble")){
         Sorts.bubbleSort(randData);
-        System.out.println(Arrays.toString(randData));
+
       }
       else if(args[1].equals("selection")){
         Sorts.selectionSort(randData);
-        System.out.println(Arrays.toString(randData));
+
       }
       else if(args[1].equals("insertion")){
         Sorts.insertionSort(randData);
-        System.out.println(Arrays.toString(randData));
+
 
       }
 

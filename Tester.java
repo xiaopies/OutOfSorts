@@ -18,19 +18,19 @@ public class Tester{
     int[] g = new int[10000];
     ran(g);
 
-    OutSorts.main(a);
+    // OutSorts.main(a);
+    //
+    // OutSorts.main(b);
+    //
+    // OutSorts.main(c);
+    //
+    // OutSorts.insertionSort(d);
+    //
+    // OutSorts.main(e);
+    //
+    // OutSorts.insertionSort(f);
 
-    OutSorts.main(b);
-
-    OutSorts.main(c);
-
-    OutSorts.main(d);
-
-    OutSorts.main(e);
-
-    OutSorts.main(f);
-
-    OutSorts.main(g);
+    OutSorts.selectionSort(g);
     System.out.println("after");
     System.out.println(Arrays.toString(g));
 

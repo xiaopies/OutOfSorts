@@ -54,19 +54,16 @@ public class Sorts{
           data[place] = a;
           data[i] = small;
         }
-        System.out.println(Arrays.toString(data));
       }
     }
     public static void insertionSort(int[] data){
       for (int i =1; i<data.length; i++){
-        System.out.println(data[i] + "hi");
         int current = data[i];
         for (int j =i; j>0; j--){
           if (data[j-1]>current){
             int sandwich = data[j];
             data[j] = data[j-1];
             data[j-1] = sandwich;
-            System.out.println(Arrays.toString(data));
           }
         }
       }

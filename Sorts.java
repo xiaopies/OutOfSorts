@@ -57,16 +57,20 @@ public class Sorts{
         System.out.println(Arrays.toString(data));
       }
     }
-    // public static void insertionSort(int[] data){
-    //   for (int i = 0; i<data.length; i++){
-    //     if (miniSort(data) == 0){
-    //       break;
-    //     }
-    //     else{
-    //       miniSort(data);
-    //     }
-    //   }
-    // }
+    public static void insertionSort(int[] data){
+      for (int i =1; i<data.length; i++){
+        System.out.println(data[i] + "hi");
+        int current = data[i];
+        for (int j =i; j>0; j--){
+          if (data[j-1]>current){
+            int sandwich = data[j];
+            data[j] = data[j-1];
+            data[j-1] = sandwich;
+            System.out.println(Arrays.toString(data));
+          }
+        }
+      }
+    }
 
 //time java Driver 2000 bubble
 }
